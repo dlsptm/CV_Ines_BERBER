@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #3A3A3A;
 }
 
 /* #D6974C = jaune
@@ -14,10 +15,10 @@ body {
 }
 
 a {
-  color: black;
+  color: #3A3A3A;
   text-decoration: none;
 }
-/*************************************** SECTEUR BLUE ***************************************/
+/*************************************** SECTEUR PINK ***************************************/
 
 .wholecontent {
   display: grid;
@@ -31,13 +32,13 @@ h3 {
 }
 
 span {
-  color: #D6974C;
+  color: #518ee4;
   padding: 0 10px;
 }
 
 
 .blue {
-  background: #D8EBFD;
+  background: #F7BCBD;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +68,7 @@ img {
 }
 
 .hidden-presentation h2 {
-  color: #60768A;
+  color: #518ee4;
   font-size: 2rem;
 }
 
@@ -93,7 +94,8 @@ img {
 }
 
 .whole h3 {
-  color: #60768A;
+  color: #F8F0F0;
+  text-shadow: 2px 2px 2px  #3A3A3A;
 }
 
 .whole ul {
@@ -112,7 +114,7 @@ img {
 }
 
 .white h3 {
-  color: #D6974C;
+  color: #518ee4;
 }
 
 .white p {
@@ -126,12 +128,21 @@ img {
 }
 
 .presentation h2 {
-  color: #D6974C;
+  color: #518ee4;
   font-size: 3rem;
 }
 
 .presentation p {
   color: black;
+}
+
+.languages ul {
+  list-style: none;
+}
+
+.languages li {
+  font-weight: 600;
+  margin: 0 10px;
 }
 
 .competences ul {
@@ -205,7 +216,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #D6974C;
+    background: #518ee4;
     color: whitesmoke;
     padding: 30px;
   }
