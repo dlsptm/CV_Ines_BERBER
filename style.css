@@ -1,29 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+:root {
+  --colorbase: #F7BCBD;
+  --black: #3A3A3A;
+  --white: #F8F0F0;
+  --title: #518ee4;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #3A3A3A;
+  color: var(--black);
 }
 
-/* #D6974C = jaune
-#60768A = bleu foncé */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
-}
-
-a {
-  color: #3A3A3A;
-  text-decoration: none;
-}
-/*************************************** SECTEUR PINK ***************************************/
-
-.wholecontent {
   display: grid;
   grid-template-columns: 30% 70%;
 }
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+/*************************************** COLORED PART ***************************************/
 
 h3 {
   font-weight: bold;
@@ -32,13 +35,13 @@ h3 {
 }
 
 span {
-  color: #518ee4;
+  color: var(--title);
   padding: 0 10px;
 }
 
 
-.blue {
-  background: #F7BCBD;
+.color {
+  background: var(--colorbase);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,12 +71,12 @@ img {
 }
 
 .hidden-presentation h2 {
-  color: #518ee4;
+  color: var(--title);
   font-size: 2rem;
 }
 
 .hidden-presentation p {
-  color: black;
+  color: var(--black);
 }
 
 .infocard {
@@ -94,32 +97,35 @@ img {
 }
 
 .whole h3 {
-  color: #F8F0F0;
-  text-shadow: 2px 2px 2px  #3A3A3A;
+  color: var(--white);
+  text-shadow: 2px 2px 2px  var(--black);
 }
 
 .whole ul {
   list-style: none;
 }
 
-/*************************************** SECTEUR WHITE ***************************************/
+/****************************************** WHITE PART *****************************************/
 
 .white {
   margin: 60px 90px;
 }
 
-
-.white div {
-  margin: 20px 0 ;
+.white section {
+  margin: 40px 0 ;
 }
 
 .white h3 {
-  color: #518ee4;
+  color: var(--title);
 }
 
 .white p {
   color: gray;
   margin: 3px 0;
+}
+
+.white article {
+  margin: 20px 10px;
 }
 
 .presentation h1 {
@@ -128,12 +134,12 @@ img {
 }
 
 .presentation h2 {
-  color: #518ee4;
+  color: var(--title);
   font-size: 3rem;
 }
 
 .presentation p {
-  color: black;
+  color: var(--black);
 }
 
 .languages ul {
@@ -147,17 +153,13 @@ img {
 
 .competences ul {
   list-style:  none;
-  margin: 10px 30px;
+  margin: 10px;
   font-weight: 900;
 }
 
 .competences li {
   margin: 10px 0;
   font-size: 1.1rem;
-}
-
-.competences, .experiencespersos, .diplomes {
-  padding-top: 20px
 }
 
 .experiencespersos h4 {
@@ -181,13 +183,13 @@ footer {
 
 
 @media only screen and (max-width: 800px) {
-  .wholecontent {
+  body {
     display: flex;
     flex-direction: column;
   }
 
 
-  .blue {
+  .color {
     display: block;
   }
 
@@ -216,13 +218,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #518ee4;
-    color: whitesmoke;
+    background: var(--title);
+    color: var(--white);
     padding: 30px;
   }
 
   footer a {
-    color: white;
+    color: var(--white);
   }
 
   footer p {
